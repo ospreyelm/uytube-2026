@@ -9,15 +9,21 @@ function onYouTubeIframeAPIReady() {
     ...smallPlayerSize,
     videoId: null,
     events: {
-      onReady: onPlayerReady,
-      onStateChange: onSectionChange,
+      'onReady': onPlayerReady,
+      'onStateChange': onSectionChange
     },
-    cc_load_policy: 0,
-    iv_load_policy: 3,
-    modestbranding: 1,
-    playsinline: 1,
-    rel: 0,
-    showinfo: 0,
+    playerVars: {
+      'cc_load_policy': 0,
+      'fs': 0,
+      'hl': 'en-us',
+      'iv_load_policy': 3,
+      'enablejsapi': 1,
+      'origin': UYTUBE_URL,
+      'playsinline': 1,
+      'rel': 0,
+      'showinfo': 0
+      // 'modestbranding': 1, // depreciated
+    },
   });
 }
 

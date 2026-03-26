@@ -8,6 +8,7 @@ const Music = require("./Music.js");
 // defines the port that the static site listens on, makes it so heroku can define it
 const PORT = process.env.PORT || 3000;
 const MONGODB_URI = process.env.MONGODB_URI;
+const UYTUBE_URL = process.env.UYTUBE_URL;
 
 mongoose
   .connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
