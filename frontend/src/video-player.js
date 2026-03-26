@@ -4,6 +4,8 @@ tag.src = "https://www.youtube.com/iframe_api";
 var firstScriptTag = document.getElementsByTagName("script")[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
+const UYTUBE_URL = process.env.UYTUBE_URL;
+
 function onYouTubeIframeAPIReady() {
   player = new YT.Player("player", {
     ...smallPlayerSize,
