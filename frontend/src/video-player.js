@@ -8,7 +8,7 @@ function onYouTubeIframeAPIReady() {
   const UYTUBE_URL = "https://uytube-69fb1e0ac7d0.herokuapp.com" || "https://www.youtube-nocookie.com";
   player = new YT.Player("player", {
     ...smallPlayerSize,
-    videoId: null,
+    videoId: '',
     events: {
       'onReady': onPlayerReady,
       'onStateChange': onSectionChange
