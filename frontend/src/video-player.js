@@ -5,7 +5,7 @@ var firstScriptTag = document.getElementsByTagName("script")[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 function onYouTubeIframeAPIReady() {
-  const UYTUBE_URL = "https://uytube-69fb1e0ac7d0.herokuapp.com" || "https://www.youtube-nocookie.com";
+  const UYTUBE_URL = "https://www.youtube-nocookie.com";
   player = new YT.Player("player", {
     ...smallPlayerSize,
     videoId: '',
